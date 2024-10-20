@@ -1,0 +1,80 @@
+site_name: Alp Documentation Technique
+extra_css:
+  - stylesheets/extra.css
+theme: 
+  name: material
+  custom_dir: overrides
+  icon:
+    admonition:
+      note: octicons/thumbsup-16
+      alert: octicons/alert-16
+  font:
+    code: Red Hat Mono
+  palette:
+    #Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Mode sombre
+      primary: blue
+      accent: deep green
+    #Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Mode Clair
+      primary: green
+      accent: deep blue
+features:
+  - navigation.instant
+  - navigation.instant.prefetch
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.sections
+  - navigation.expand
+  - navigation.path
+  - navigation.footer
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+plugins:
+  - search
+nav:
+  - Accueil: index.md
+  - Plan du site: plan.md
+  - Solution technique: solution.md
+  - Pages:
+      - Home: pages/home.md
+      - Collection List: pages/collection-list.md
+      - Collection: pages/collection.md
+      - Focus Collection: pages/focus-collection.md
+      - All Project: pages/all-project.md
+      - Project: pages/project.md
+      - Textures: pages/textures.md
+      - Tools: pages/tools.md
+      - Not Found: pages/404.md
+      - About Us: pages/about-us.md
+      - signup/register: pages/signup-register.md
+      - Product Detail: pages/product-detail.md
+      - Contact: pages/contact.md
+      - privacy: pages/privacy.md
+  - Composants:
+      - Header: composants/header.md
+      - Footer: composants/footer.md
+      - Composants: composants/composants.md
+ 
