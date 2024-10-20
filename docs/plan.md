@@ -1,6 +1,6 @@
-# Architecture du projet Angular
+# Architecture du site Alpcarpets
 
-Voici un diagramme illustrant la structure de l'application h24.
+Voici Le plan du site Alpcarpets.
 
 Retrouver la documentation de chaque page en cliquant sur les noeuds
 
