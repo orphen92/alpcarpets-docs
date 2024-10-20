@@ -55,6 +55,7 @@ markdown_extensions:
 plugins:
   - search
 nav:
+  - Accueil: index.md
   - Plan du site: plan.md
   - Solution technique: solution.md
   - Pages:
